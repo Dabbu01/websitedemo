@@ -1,0 +1,628 @@
+#include <stdio.h>
+
+int main() {
+    
+    printf("hello world");
+
+    return 0;
+}
+#include <stdio.h>
+
+int main() {
+
+    float pi=3.14;
+
+    return 0;
+
+}
+#include <stdio.h>
+
+int main(){
+
+    char star='*';
+
+    return 0;
+}
+#include <stdio.h>
+
+int main() {
+
+    int age=25;
+
+    return 0;
+    
+}
+#include <stdio.h>
+//this code display how datatype display in c
+
+int main(){
+
+    int age=25;
+
+    return 0;
+}
+#include <stdio.h>
+/*
+this is a multiline comment
+ok sir
+*/
+int main() {
+    float pi=3.14;
+    return 0;
+}
+#include <stdio.h>
+int main() {
+    printf("dabbu\n");
+    printf("bhardwaj\n");
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    int age=25;
+    printf("age is %d",age);
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    float pi=3.14;
+    printf("pi is %f\n",pi);
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    char star="*";
+    printf("star is %c\n",star);
+    return 0;
+}
+#include <stdio.h>
+int main() {
+    int age;
+    printf("enter age");
+    scanf("%d",&age);
+    printf("age is:%d",age);
+    return 0;
+}
+#include <stdio.h>
+int main() {
+    int a,b;
+    printf("enter a");
+    scanf("%d",&a);
+    printf("enter b");
+    scanf("%d",&b);
+    int sum=a+b;
+    printf("sum is:%d",sum);
+    return 0;
+}
+#include <stdio.h>
+int main() {
+    int a,b;
+    printf("enter a");
+    scanf("%d",&a);
+    printf("enter b");
+    scanf("%d",b);
+    printf("sum is :%d",a+b);
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    int marks;
+    printf("enter marks");
+    scanf("%d",&marks);
+    if(marks>90){
+        printf("a grade");
+    }
+    else if(marks>60){
+        printf("b grade");
+    }
+    else if("marks>30"){
+        printf("c grade");
+    }
+    else{
+        printf("not a grade");
+    }
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    int age;
+    printf("enter age");
+    scanf("%d",&age);
+    if(age>=18){
+        printf("adult\n");
+    }
+    else if(age<18){
+        printf("not adult\n");
+    
+
+    }
+    else{
+        printf("not person");
+    }
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    int age;
+    printf("enter age");
+    scanf("%d",&age);
+    age>=18?printf("adult\n"):printf("not adult");
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    int day;
+    printf("enter day");
+    scanf("%d",&day);
+    switch(day){
+        case1:printf("monday\n");
+        break;
+        case2:printf("tuesday\n");
+        break;
+        case3:printf("wednesday\n");
+        break;
+        case4:printf("thrusday\n");
+        break;
+        default:printf("not a valid day\n");
+    }
+}
+#include <stdio.h>
+int main(){
+    int number;
+    printf("enter number");
+    scanf("%d",&number);
+    if(number>90){
+        printf("a\n");
+    }if(number>80&&number<90){
+        printf("b\n");
+    }
+    else{
+        printf("fail\n");
+    }
+}
+#include <stdio.h>
+int main(){
+    int marks;
+    printf("enter marks(0-100)");
+    scanf("%d",&marks);
+    marks>30?printf("pass\n"):printf("fail\n");
+}
+#include <stdio.h>
+int main(){
+    int marks;
+    printf("enter marks(0-100)");
+    scanf("%d",&marks);
+    if(marks>=90&&marks<=100){
+        printf("a+");
+    }
+    else if(marks>=70&&marks<90){
+        printf("a");
+    }
+    else if(marks>=30&&marks<70){
+        printf("b");
+    }
+    else{
+        printf("fail\n");
+    }
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    int i;
+    for(int i=10;i>=1;i--){
+        printf("%d\n",i);
+    }
+    return 0;
+
+}
+#include <stdio.h>
+int main(){
+    int i=1;
+    while(i<=5){
+        printf("%d\n",i);
+        i++;
+    }
+
+}
+#include <stdio.h>
+int main(){
+    int a=1;
+    while(a<=5){
+        printf("hello\n");
+
+    }
+}
+#include <stdio.h>
+int main(){
+    int b=1;
+    while(b<=10){
+        printf("guruket\n");
+        b++;
+    }
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    int i=1;
+    while(i<=10){
+        printf("guruket\n");
+        i++;
+    }
+}
+#include <stdio.h>
+int main(){
+    int i=1;
+    while(i<=10){
+        printf("%d\n",i*2);
+        i++;
+    }
+}
+#include <stdio.h>
+int main(){
+    int a=1;
+    while(a<=10){
+        if(a*3%2!=0){
+            a++;
+           continue;
+        }
+
+
+        printf("3x%d=%d\n",a,a*3);
+        a++;
+    }
+}
+#include <stdio.h>
+
+int main() {
+    int i, j;
+
+    for (i = 0; i < 6; i++) {
+        for (j = 0; j < 7; j++) {
+            if ((i == 0 && (j == 1 || j == 2 || j == 4 || j == 5)) ||
+                (i == 1 && (j != 0 && j != 3 && j != 6)) ||
+                (i == 2 && (j != 0 && j != 6)) ||
+                (i == 3 && (j != 0 && j != 6)) ||
+                (i == 4 && (j == 2 || j == 3 || j == 4)) ||
+                (i == 5 && j == 3)) {
+                printf("*");
+            } else {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    for(int i=1;i<=10;i++){
+        printf("%d\n",i);
+        if(i==5){
+            break;
+        }
+    }
+}
+#include <stdio.h>
+int main(){
+    int a;
+    printf("enter a");
+    scanf("%d\n",&a);
+    int i=0;
+    while(i<=a){
+        printf("%d\n",i);
+        i++;
+    }
+
+}
+#include <stdio.h>
+int main(){
+    int i=1;
+    while(i<=10){
+         if(i==5){
+            continue;
+            printf("%d\n",i);
+         
+        i++;
+        }
+    }
+}
+#include <stdio.h>
+int main(){
+    int a=1;
+    do{
+        printf("%d\n",a);
+        a++;
+    } while(a<=10);
+}
+#include <stdio.h>
+int main(){
+    int a=10;
+    do{
+        printf("%d\n",a);
+        a--;
+    } while(a>=1);
+}
+#include <stdio.h>
+int main(){
+    int a=10;
+    while(a>=1){
+        if(a==5){
+            continue;
+        }
+        printf("%d\n",a);
+        a--;
+    }
+  }
+#include <stdio.h>
+int main(){
+    int n,i=1,sum=0;
+    printf("enter n");
+    scanf("%d",&n);
+    while(i<=n){
+        sum=sum+i;
+        i++;
+    }
+    printf("sum=%d",sum);
+
+}
+#include <stdio.h>
+int main(){
+    printf("Hello world");
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    printf("Hello pw\n");
+    printf("raghav\n");
+    printf("hello");
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    printf("hello\nworld");
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    printf("nn\n\nnn\n");
+    printf("nn/n/nnn/n");
+}
+#include <stdio.h>
+int main(){
+    int x;
+    x=500;
+    printf("%d\n",x);
+    x=9;
+    printf("%d",x);
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    int x;
+    x=6;
+    printf("%d\n",x);
+    x=x+6;
+    printf("%d\n",x);
+    x=x-20;
+    printf("%d",x);
+}
+#include <stdio.h>
+int main(){
+    int x=50;
+    int y=30;
+    printf("%d\n",x+y);
+    printf("%d\n",x-y);
+    printf("%d\n",x*y);
+    printf("%d\n",x/y);
+    printf("%d\n",x%y);
+    return 0;
+
+}
+#include <stdio.h>
+int main(){
+    int r=5;
+    printf("%f",4/3*3.14*r*r*r);
+    return 0; 
+}
+#include <stdio.h>
+int main(){
+    float m1=100;//maths marks
+    float m2=77;//chem marks
+    float m3=88;//phy marks
+    printf("%f",m1+m2+m3/3);
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    int r=7;
+    float pi=3.14;
+    printf("%d",pi*r*r);
+}
+#include <stdio.h>
+int main(){
+    float p,r,t,si;
+    p=100;
+    r=10;
+    t=2;
+    si=(p*r*t)/100;
+    printf("%f",si);
+}
+#include <stdio.h>
+int main(){
+    float radius;
+    printf("enter radius");
+    scanf("%f",&radius);
+    float pi=3.14;
+    float area=pi*radius*radius;
+    printf("%f",area);
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    int x;
+    printf("enter x");
+    scanf("%d",&x);
+}
+#include <stdio.h>
+int main(){
+    int x;
+    scanf("%d",&x);
+    printf("the number entered is :%d",x);
+}
+#include <stdio.h>
+int main(){
+    int x,y;
+    printf("enter values of p and q:\n");
+ scanf("%d %d",&x,&y);
+ printf("p=%d q=%d",x,y);
+}
+#include <stdio.h>
+int main(){
+    int a,b;
+    printf("enter a:\n");
+    printf("enter b:");
+    scanf("%d %d",&a,&b);
+    printf("%d",a%b);
+}
+#include <stdio.h>
+int main(){
+    int a=6;
+    int b=4;
+    printf("%d",a%b);
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    float a;
+    int b;
+    b=a;
+    int c=a-b;
+    printf("enter a:");
+    scanf("%f\n",&a);
+    printf("%d\n",b);
+    printf("%d",c);
+}
+#include <stdio.h>
+int main(){
+    int i=2*3/4+4/4+8-2+5/8;
+    printf("%d",i);
+    return 0;
+
+}
+#include <stdio.h>
+int main(){
+    int i=2,j=3,k,l;
+    float a,b;
+    k=i/j*j;
+    l=j/i*i;
+    a=i/j*j;
+    b=j/i*i;
+    printf("%d %d %f %f",k,l,a,b);
+
+}
+#include <stdio.h>
+int main(){
+    char ch='a';
+    printf("%c",ch);
+    return 0;
+
+}
+#include <stdio.h>
+int main(){
+     char x='@';
+     printf("%d",x);
+}
+#include <stdio.h>
+int main(){
+      int x;
+      printf("enter x:");
+      scanf("%d",&x);
+      if(x%2==0){
+        printf("even\n");
+      }else {
+            printf("odd");
+        }
+      }
+#include <stdio.h>
+int main(){
+    int x;
+    printf("enter x:");
+    scanf("%d",&x);
+    if(x%5==0){
+        printf("divisible by 5\n");
+    }else{
+        printf("not divisible by 5");
+    }
+}   
+#include <stdio.h>
+int main(){
+    int year;
+    printf("enter year:");
+    scanf("%d",&year);
+    if(year%2==0){
+        printf("x is leap year");
+
+    }else {
+        printf("x not a leap year");
+    }
+}
+#include <stdio.h>
+int main(){
+    int cp,sp;
+    printf("enter cp:");
+    printf("enter sp:");
+    scanf("%d %d",&cp,&sp);
+    if(sp>cp){
+        printf("profit\n");
+    }else{
+        printf("loss");
+    }
+
+
+}
+#include <stdio.h>
+int main(){
+       int l;
+       printf("enter length:");
+       scanf("%d",&l);
+       int b;
+       printf("enter breath:");
+       scanf("%d\n",&b);
+       int a=l*b;
+       int p=2*(l+b);
+       if(a>p){
+        printf("area is greater then perameter");
+    
+       } else{
+        printf("perameter is greater than area");
+       } 
+       return 0;     
+}
+#include <stdio.h>
+int main(){
+    int n;
+    printf("enter n:");
+    scanf("%d",&n);
+    if(n>5){
+        printf("the number is greater than 5");
+
+    }else{
+        printf("the number is not greater than 5");
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
